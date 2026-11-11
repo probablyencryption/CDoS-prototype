@@ -1,0 +1,99 @@
+{
+  "id": "arup-replay",
+  "title": "Scenario B — Executive Deepfake (Arup-class)",
+  "gridLabel": "Finance Sync — 6 participants",
+  "participants": [
+    {
+      "id": "you",
+      "name": "You",
+      "subtitle": "This device · Finance Operations",
+      "kind": "self",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x8F42…A31C · capture: FaceTime HD (built-in)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 44b0…9ce2 → d17a…5f38 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T10:14:02Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "23 prior verified sessions · median trust 0.97" }
+      },
+      "historySparkline": [88, 90, 91, 93, 92, 94, 95, 96, 95, 97, 97, 98]
+    },
+    {
+      "id": "priya",
+      "name": "Priya Sharma",
+      "subtitle": "Treasury Operations · Hong Kong",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x64D9…1B72 · capture: Logitech MX Brio (UVC)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 2c8f…a0d3 → 6e41…bb09 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T10:14:19Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "28 prior verified sessions · median trust 0.97" }
+      },
+      "historySparkline": [90, 91, 89, 93, 94, 93, 95, 96, 95, 97, 96, 97]
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus Chen",
+      "subtitle": "Accounts Payable · Hong Kong",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x0AF3…7E5D · capture: Dell UltraSharp WB7022" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 hardware key (FIDO2)" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 91b6…4c20 → e35d…07fa (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T10:14:36Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "15 prior verified sessions · median trust 0.95" }
+      },
+      "historySparkline": [83, 86, 88, 87, 90, 92, 91, 93, 94, 93, 95, 95]
+    },
+    {
+      "id": "laura",
+      "name": "Laura Whitfield",
+      "subtitle": "Compliance · London, UK",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "Secure Enclave attest: 0xC217…93B8 · capture: FaceTime HD (built-in)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 7d02…e8c1 → 1fa9…62b4 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: truepic-lens 2.4 · signed 2026-08-14T10:15:01Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "19 prior verified sessions · median trust 0.96" }
+      },
+      "historySparkline": [87, 89, 88, 91, 90, 93, 92, 94, 95, 94, 96, 96]
+    },
+    {
+      "id": "tomas",
+      "name": "Tomás Ferreira",
+      "subtitle": "Internal Audit · Lisbon, PT",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x3E88…50C6 · capture: Logitech Brio 4K (UVC)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: c9d4…12ef → 40a7…d98b (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T10:15:24Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "21 prior verified sessions · median trust 0.96" }
+      },
+      "historySparkline": [85, 88, 87, 90, 91, 90, 93, 92, 94, 95, 96, 95]
+    },
+    {
+      "id": "cfo",
+      "name": "Chief Financial Officer",
+      "subtitle": "London, UK — unconfirmed",
+      "kind": "remote",
+      "joinAtMs": 5000,
+      "layers": {
+        "device": { "result": "failed", "detail": "capture source: OBS-VirtualCam 4.1 — attestation absent" },
+        "identity": { "result": "unresolved", "detail": "no cryptographic binding — platform display name only" },
+        "stream": { "result": "failed", "detail": "hash chain: ABSENT" },
+        "c2pa": { "result": "failed", "detail": "No Content Credentials present" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    }
+  ]
+}

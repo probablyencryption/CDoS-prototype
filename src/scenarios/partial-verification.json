@@ -1,0 +1,68 @@
+{
+  "id": "partial-verification",
+  "title": "Scenario C — Partial Verification (Legacy Hardware)",
+  "gridLabel": "Vendor Coordination — 4 participants",
+  "participants": [
+    {
+      "id": "you",
+      "name": "You",
+      "subtitle": "This device · Procurement Lead",
+      "kind": "self",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x8F42…A31C · capture: FaceTime HD (built-in)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 0ab2…77c9 → 3e64…f01d (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T11:02:38Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "23 prior verified sessions · median trust 0.97" }
+      },
+      "historySparkline": [88, 90, 91, 93, 92, 94, 95, 96, 95, 97, 97, 98]
+    },
+    {
+      "id": "grace",
+      "name": "Grace Nwosu",
+      "subtitle": "Procurement · Abuja, NG",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0xB55E…2D90 · capture: Lenovo integrated cam (MIPI)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 8c31…d4a6 → 27f0…95be (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T11:03:02Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "14 prior verified sessions · median trust 0.95" }
+      },
+      "historySparkline": [84, 86, 88, 87, 90, 89, 92, 93, 92, 94, 95, 95]
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver Bennett",
+      "subtitle": "Logistics Partner · Manchester, UK",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x49C7…E13A · capture: Logitech C925e (UVC)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 hardware key (FIDO2)" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 5f9a…08d2 → b6e3…41cc (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: truepic-lens 2.4 · signed 2026-08-14T11:03:29Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "11 prior verified sessions · median trust 0.93" }
+      },
+      "historySparkline": [80, 83, 85, 84, 87, 89, 88, 91, 90, 92, 93, 93]
+    },
+    {
+      "id": "miriam",
+      "name": "Miriam Adeyemi",
+      "subtitle": "Field Office · Legacy hardware",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM 1.2 attestation: 0x5C19…B7E2 · capture: integrated webcam (2019 firmware)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 4d2c…91aa → e07f…3b56 (contiguous)" },
+        "c2pa": { "result": "unresolved", "detail": "No Content Credentials — capture pipeline predates C2PA support" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    }
+  ]
+}
