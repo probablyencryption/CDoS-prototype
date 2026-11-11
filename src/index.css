@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #0B0F1A;
+  --color-tile: #141B2E;
+  --color-edge: #233150;
+  --color-ink: #F1F5F9;
+  --color-ink-muted: #8FA0BF;
+  --color-verified: #34D399;
+  --color-failed: #F87171;
+  --color-unresolved: #3E4A63;
+  --color-checking: #7DD3FC;
+  --color-warn-fill: #2A0F14;
+  --color-accent: #60A5FA;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  overscroll-behavior: none;
+}
+
+/* ZRS checking pulse */
+@keyframes zrs-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+.zrs-checking {
+  animation: zrs-pulse 0.55s ease-in-out infinite;
+}
+
+/* Placeholder "live video" texture: drifting gradient + scanlines + noise */
+@keyframes tile-drift {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+}
+.tile-drift {
+  background-size: 220% 220%;
+  animation: tile-drift 26s ease-in-out infinite;
+}
+
+.tile-scanlines {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.028) 0px,
+    rgba(255, 255, 255, 0.028) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.tile-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 140px 140px;
+}
+
+@keyframes scan-band {
+  0% {
+    top: -40%;
+  }
+  100% {
+    top: 115%;
+  }
+}
+.tile-scanband {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  height: 38%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(125, 211, 252, 0.045),
+    transparent
+  );
+  animation: scan-band 8s linear infinite;
+}
+
+@keyframes avatar-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+.avatar-float {
+  animation: avatar-float 6.5s ease-in-out infinite;
+}
+
+@keyframes rec-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.rec-dot {
+  animation: rec-blink 2.4s ease-in-out infinite;
+}
+
+/* Entrances */
+@keyframes tile-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.tile-enter {
+  animation: tile-enter 0.35s ease-out;
+}
+
+@keyframes banner-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.banner-enter {
+  animation: banner-enter 0.3s ease-out;
+}
+
+@keyframes label-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.label-fade {
+  animation: label-fade 0.4s ease-out;
+}
+
+@keyframes drawer-enter {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.drawer-enter {
+  animation: drawer-enter 0.25s ease-out;
+}
+
+@keyframes modal-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.modal-enter {
+  animation: modal-enter 0.2s ease-out;
+}
+
+/* Screenshot mode: freeze the frame. `animation: none` (not paused) so
+   entrance keyframes can't strand elements at 0% opacity. */
+.screenshot-freeze *,
+.screenshot-freeze *::before,
+.screenshot-freeze *::after {
+  animation: none !important;
+  transition: none !important;
+  cursor: default !important;
+}

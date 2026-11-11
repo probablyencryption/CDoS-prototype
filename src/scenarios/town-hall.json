@@ -1,0 +1,194 @@
+{
+  "id": "town-hall",
+  "title": "Scenario D — Company Town Hall",
+  "gridLabel": "All-Hands Town Hall — 12 participants",
+  "participants": [
+    {
+      "id": "you",
+      "name": "You",
+      "subtitle": "This device · Host",
+      "kind": "self",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x8F42…A31C · capture: FaceTime HD (built-in)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 1d7e…30ab → 9f24…c65d (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T14:00:12Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "23 prior verified sessions · median trust 0.97" }
+      },
+      "historySparkline": [88, 90, 91, 93, 92, 94, 95, 96, 95, 97, 97, 98]
+    },
+    {
+      "id": "adaeze",
+      "name": "Adaeze Obi",
+      "subtitle": "People Operations · Lagos, NG",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x71B4…C9E0 · capture: Logitech Brio 4K (UVC)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: ab30…52f7 → 04dc…e1b8 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T14:00:31Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "25 prior verified sessions · median trust 0.97" }
+      },
+      "historySparkline": [89, 90, 92, 91, 93, 94, 93, 95, 96, 95, 97, 97]
+    },
+    {
+      "id": "jonas",
+      "name": "Jonas Weber",
+      "subtitle": "Engineering · Berlin, DE",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0xD208…4A6F · capture: Elgato Facecam Pro (UVC)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 hardware key (FIDO2)" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 66e1…09cd → f8a2…7d43 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T14:00:47Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "30 prior verified sessions · median trust 0.98" }
+      },
+      "historySparkline": [91, 92, 90, 94, 93, 95, 96, 95, 97, 96, 98, 98]
+    },
+    {
+      "id": "fatima",
+      "name": "Fatima Al-Rashid",
+      "subtitle": "Product · Dubai, AE",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "Secure Enclave attest: 0x9C55…D07B · capture: iPhone Continuity Camera" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 2e90…b3a4 → 8c17…50fe (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: truepic-lens 2.4 · signed 2026-08-14T14:01:05Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "18 prior verified sessions · median trust 0.96" }
+      },
+      "historySparkline": [86, 88, 87, 90, 92, 91, 93, 94, 93, 95, 96, 96]
+    },
+    {
+      "id": "ryan",
+      "name": "Ryan O'Connor",
+      "subtitle": "Sales · Dublin, IE",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x35FA…81D2 · capture: Dell UltraSharp WB7022" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: c1b8…64e0 → 39ad…f752 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T14:01:22Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "16 prior verified sessions · median trust 0.95" }
+      },
+      "historySparkline": [83, 85, 87, 86, 89, 91, 90, 92, 93, 94, 93, 95]
+    },
+    {
+      "id": "alex-turner",
+      "name": "Alex Turner",
+      "subtitle": "Unconfirmed",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "failed", "detail": "capture source: OBS-VirtualCam 4.1 — attestation absent" },
+        "identity": { "result": "unresolved", "detail": "no cryptographic binding — platform display name only" },
+        "stream": { "result": "failed", "detail": "hash chain: ABSENT" },
+        "c2pa": { "result": "failed", "detail": "No Content Credentials present" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    },
+    {
+      "id": "support-desk",
+      "name": "Support Desk",
+      "subtitle": "Unconfirmed",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "failed", "detail": "capture source: ManyCam 8.2 — attestation absent" },
+        "identity": { "result": "failed", "detail": "ed25519 signature INVALID — key mismatch with claimed IdP account" },
+        "stream": { "result": "failed", "detail": "hash chain: ABSENT" },
+        "c2pa": { "result": "failed", "detail": "manifest signature invalid — unknown signer" },
+        "history": { "result": "failed", "detail": "2 prior sessions flagged for provenance failure" }
+      },
+      "historySparkline": []
+    },
+    {
+      "id": "james",
+      "name": "James Whitmore",
+      "subtitle": "Unconfirmed",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x9D04…77B2 · capture: HP TrueVision HD" },
+        "identity": { "result": "failed", "detail": "ed25519 signature INVALID — replayed credential" },
+        "stream": { "result": "failed", "detail": "hash chain discontinuity at frame 18,204" },
+        "c2pa": { "result": "unresolved", "detail": "No Content Credentials present" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    },
+    {
+      "id": "dial-in",
+      "name": "Dial-in Bridge",
+      "subtitle": "PSTN · audio only",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "unresolved", "detail": "PSTN dial-in — no capture attestation channel" },
+        "identity": { "result": "unresolved", "detail": "caller ID only — no cryptographic identity" },
+        "stream": { "result": "unresolved", "detail": "no video stream to hash" },
+        "c2pa": { "result": "unresolved", "detail": "not applicable to PSTN audio" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    },
+    {
+      "id": "nina",
+      "name": "Nina Kovács",
+      "subtitle": "Marketing · Budapest, HU",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "failed", "detail": "virtual display capture — attestation absent" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "unresolved", "detail": "frame-hash channel not established" },
+        "c2pa": { "result": "failed", "detail": "manifest timestamp outside session window (−42 days)" },
+        "history": { "result": "verified", "detail": "9 prior verified sessions · median trust 0.91" }
+      },
+      "historySparkline": [78, 82, 85, 84, 88, 87, 90, 91, 89, 92, 91, 93]
+    },
+    {
+      "id": "guest-7",
+      "name": "Guest User 7",
+      "subtitle": "Joined via link",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "unresolved", "detail": "browser tab capture — attestation unsupported" },
+        "identity": { "result": "failed", "detail": "guest token reused from expired invitation" },
+        "stream": { "result": "unresolved", "detail": "frame-hash channel not established" },
+        "c2pa": { "result": "unresolved", "detail": "No Content Credentials present" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    },
+    {
+      "id": "rob",
+      "name": "Rob Halloran",
+      "subtitle": "Unconfirmed",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "failed", "detail": "capture source: v4l2loopback — attestation absent" },
+        "identity": { "result": "unresolved", "detail": "no cryptographic binding — platform display name only" },
+        "stream": { "result": "failed", "detail": "hash chain: ABSENT" },
+        "c2pa": { "result": "unresolved", "detail": "No Content Credentials present" },
+        "history": { "result": "unresolved", "detail": "no prior verified sessions" }
+      },
+      "historySparkline": []
+    }
+  ]
+}

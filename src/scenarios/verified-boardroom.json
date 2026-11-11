@@ -1,0 +1,100 @@
+{
+  "id": "verified-boardroom",
+  "title": "Scenario A — Verified Boardroom",
+  "gridLabel": "Quarterly Board Review — 6 participants",
+  "participants": [
+    {
+      "id": "you",
+      "name": "You",
+      "subtitle": "This device · Presenter",
+      "kind": "self",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x8F42…A31C · capture: FaceTime HD (built-in)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: b7e1…44f2 → 9c0a…d818 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T09:58:41Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "23 prior verified sessions · median trust 0.97" }
+      },
+      "historySparkline": [88, 90, 91, 93, 92, 94, 95, 96, 95, 97, 97, 98]
+    },
+    {
+      "id": "amara",
+      "name": "Amara Okafor",
+      "subtitle": "Board Chair · Lagos, NG",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x2B7D…9E01 · capture: Logitech Brio 4K (UVC)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 hardware key (FIDO2)" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 3fa8…c210 → 77de…0b94 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T09:59:03Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "31 prior verified sessions · median trust 0.98" }
+      },
+      "historySparkline": [90, 92, 93, 91, 94, 95, 96, 96, 97, 98, 97, 98]
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel Reyes",
+      "subtitle": "Finance Director · Madrid, ES",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "Secure Enclave attest: 0x77A1…0C4E · capture: iPhone Continuity Camera" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: a1c4…f9e7 → 5b02…33d1 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: truepic-lens 2.4 · signed 2026-08-14T09:59:27Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "17 prior verified sessions · median trust 0.95" }
+      },
+      "historySparkline": [84, 87, 89, 88, 91, 90, 93, 94, 93, 95, 96, 95]
+    },
+    {
+      "id": "ingrid",
+      "name": "Ingrid Solberg",
+      "subtitle": "Non-Executive Director · Oslo, NO",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0x51C8…D2AF · capture: Surface Studio cam (MIPI)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 9d3e…21aa → c4f7…8802 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T10:00:12Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "26 prior verified sessions · median trust 0.96" }
+      },
+      "historySparkline": [89, 88, 90, 92, 93, 92, 94, 95, 96, 95, 96, 97]
+    },
+    {
+      "id": "kenji",
+      "name": "Kenji Watanabe",
+      "subtitle": "Company Secretary · Tokyo, JP",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "layers": {
+        "device": { "result": "verified", "detail": "TPM attestation: 0xA930…6F11 · capture: Dell UltraSharp WB7022" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 hardware key (FIDO2)" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: 6e19…bb37 → 0d5c…4ef0 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: c2pa-rs 0.32 · signed 2026-08-14T10:01:45Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "12 prior verified sessions · median trust 0.94" }
+      },
+      "historySparkline": [82, 85, 84, 88, 87, 90, 91, 90, 92, 93, 94, 94]
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah Mitchell",
+      "subtitle": "General Counsel · London, UK",
+      "kind": "remote",
+      "joinAtMs": 0,
+      "micMuted": true,
+      "layers": {
+        "device": { "result": "verified", "detail": "Secure Enclave attest: 0x1E5B…88C3 · capture: FaceTime HD (built-in)" },
+        "identity": { "result": "verified", "detail": "IdP binding (RFC 8827): ed25519 sig valid · AAL3 passkey" },
+        "stream": { "result": "verified", "detail": "frame-hash chain: f207…19cd → 8ab3…e654 (contiguous)" },
+        "c2pa": { "result": "verified", "detail": "claim: truepic-lens 2.4 · signed 2026-08-14T10:02:11Z · CN=Horizon Meet Attest CA" },
+        "history": { "result": "verified", "detail": "20 prior verified sessions · median trust 0.96" }
+      },
+      "historySparkline": [86, 88, 90, 89, 92, 91, 93, 95, 94, 96, 95, 97]
+    }
+  ]
+}
